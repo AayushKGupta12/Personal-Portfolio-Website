@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Recovery Aayush Gupta</title>
+    <title>Aayush Gupta | Portfolio </title>
   </head>
 
   <style>
@@ -30,7 +30,7 @@
   height: 100%;
   /* Add your background pattern here */
   background: rgb(0, 0, 0)
-    radial-gradient(#373718b6 10%, transparent 1%);
+    radial-gradient(#2a2a12b6 10%, transparent 1%);
 
   background-size: 11px 11px;
 }
@@ -441,6 +441,9 @@
       .lead {
         font-size: 1rem;
       }
+      .notification{
+        height: 200px;
+      }
     }
     
     @media (max-width: 767px) {
@@ -467,6 +470,9 @@
       .container .view:hover {
         font-size: 14px;
       }
+      .notification{
+        height: 200px;
+      }
     }
     
     @media (max-width: 575px) {
@@ -490,6 +496,10 @@
       .btn-lg {
         padding: 0.5rem 1rem;
         font-size: 1rem;
+      }
+
+      .notification{
+        height: 200px;
       }
     }
 
@@ -599,6 +609,199 @@ ul {
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
 }
+
+
+/* From Uiverse.io by SouravBandyopadhyay */ 
+        .container {
+            padding: 5% 3%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .notification {
+            display: flex;
+            flex-direction: column;
+            isolation: isolate;
+            position: relative;
+            width: 34rem;
+            height: 18rem;
+            background: #29292c;
+            border-radius: 1rem;
+            overflow: hidden;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+            --color: #32a6ff;
+        }
+
+        .notification:before {
+            position: absolute;
+            content: "";
+            inset: 0.0625rem;
+            border-radius: 0.9375rem;
+            background: #18181b;
+            z-index: 2;
+        }
+
+        .notification:after {
+            position: absolute;
+            content: "";
+            width: 0.25rem;
+            inset: 0.65rem auto 0.65rem 0.5rem;
+            border-radius: 0.125rem;
+            background: var(--gradient);
+            transition: transform 300ms ease;
+            z-index: 4;
+        }
+
+        .notititle {
+            color: var(--color);
+            padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: transform 300ms ease;
+            z-index: 5;
+        }
+
+        .notification:hover .notititle {
+            transform: translateX(0.15rem);
+        }
+
+        .notibody {
+            color: #99999d;
+            padding: 0 1.25rem;
+            transition: transform 300ms ease;
+            z-index: 5;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .notification:hover .notibody {
+            transform: translateX(0.25rem);
+        }
+
+        .notiglow,
+        .notiborderglow {
+            position: absolute;
+            width: 20rem;
+            height: 20rem;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle closest-side at center, white, transparent);
+            opacity: 0;
+            transition: opacity 300ms ease;
+        }
+
+        .notiglow {
+            z-index: 3;
+        }
+
+        .notiborderglow {
+            z-index: 1;
+        }
+
+        .notification:hover .notiglow {
+            opacity: 0.1;
+        }
+
+        .notification:hover .notiborderglow {
+            opacity: 0.1;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 3% 4%;
+            }
+            
+            .notification {
+                width: 90vw;
+                max-width: 500px;
+                height: auto;
+                min-height: 16rem;
+            }
+            
+            .notititle {
+                font-size: 1rem;
+                padding: 0.65rem 0.25rem 0.4rem 1rem;
+            }
+            
+            .notibody {
+                font-size: 0.9rem;
+                padding: 0 1rem;
+                line-height: 1.3;
+            }
+            
+            .notification:after {
+                inset: 0.65rem auto 0.65rem 0.4rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 2% 3%;
+            }
+            
+            .notification {
+                width: 95vw;
+                max-width: 400px;
+                height: auto;
+                min-height: 14rem;
+            }
+            
+            .notititle {
+                font-size: 0.95rem;
+                padding: 0.6rem 0.2rem 0.3rem 0.9rem;
+            }
+            
+            .notibody {
+                font-size: 0.85rem;
+                padding: 0 0.9rem;
+                line-height: 1.25;
+                margin-bottom: 0.4rem;
+            }
+            
+            .notification:after {
+                width: 0.2rem;
+                inset: 0.6rem auto 0.6rem 0.3rem;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 320px) {
+            .container {
+                padding: 2%;
+            }
+            
+            .notification {
+                width: 98vw;
+                max-width: 300px;
+                min-height: 12rem;
+            }
+            
+            .notititle {
+                font-size: 0.9rem;
+                padding: 0.5rem 0.2rem 0.3rem 0.8rem;
+            }
+            
+            .notibody {
+                font-size: 0.8rem;
+                padding: 0 0.8rem;
+                line-height: 1.2;
+            }
+            
+            .notification:after {
+                inset: 0.5rem auto 0.5rem 0.25rem;
+            }
+            
+            .notiglow,
+            .notiborderglow {
+                width: 15rem;
+                height: 15rem;
+            }
+        }
 
   </style>
 
@@ -797,6 +1000,28 @@ ul {
         </div>
       </div>
 
+    
+    <h2 style="text-align: center; padding-top: 60px; font-style:oblique; margin-bottom: 60px; font-size: 40px;"> My Internship</h2>
+
+
+    <div style="padding-left: 5%; padding-right: 5%;">
+    <div class="notification" style="margin-left: auto; margin-right: auto; margin-top: 5%;">
+    <div class="notiglow"></div>
+    <div class="notiborderglow"></div>
+    <div class="notititle"> <a href="https://prishal.ai/">Prishal Technolabs Pvt. Ltd</a></div>
+    <div class="notibody"><span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">Data Analyst and ML Intern - May 2025 to July 2025</span>
+    <div class="notibody">AI Customer Sales & Enquiry Bot<br>
+- <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">Reduced human intervention by 95%</span> using LLMs, Speech-to-Text <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">(STT)</span>, Text-to-Speech <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">(TTS)</span>, and <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">Microsoft Azure</span> AI solutions, enabling full automation.<br>
+- Used <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">OpenAI LLMs & Azure Sentiment Analysis</span>to analyze customer sentiment and dynamically redirect calls for optimized engagement.<br>
+- Worked with AI tools: <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 8px 0px 8px; font-style: italic; color: black;">MobaExtreme, Asterisk, Assembly AI, Bark by Suno</span>& Microsoft Azure for efficient Server Addition
+</div>
+    </div>
+    </div>
+
+
+
+
+
       
 <div class=" j " style="width: 100%;
       max-width: 475px;
@@ -821,6 +1046,21 @@ ul {
       </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -919,10 +1159,6 @@ ul {
     
 
 </div>    
-
-
-
-
   <div style="width: 80%; height: 2px; background-color: rgba(245, 238, 221, 0.2); margin-left: auto; margin-right: auto;"></div>
   <div style="display: flex;">
     <footer class="foot">
