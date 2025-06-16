@@ -1,12 +1,14 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Aayush Gupta | Portfolio </title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>Recovery Aayush Gupta</title>
   </head>
 
   <style>
@@ -22,39 +24,36 @@
       max-width: 100%;
     }
 
-    body{
+    body {
       background-color: black;
       color: #fff;
-      
-  width: 100%;
-  height: 100%;
-  /* Add your background pattern here */
-  background: rgb(0, 0, 0)
-    radial-gradient(#2a2a12b6 10%, transparent 1%);
+      width: 100%;
+      height: 100%;
+      /* Add your background pattern here */
+      background: rgb(0, 0, 0)
+        radial-gradient(#2a2a12b6 10%, transparent 1%);
+      background-size: 11px 11px;
+    }
 
-  background-size: 11px 11px;
-}
-
-
-    .poster{
+    .poster {
       width: 100%;
       height: auto;
       max-height: 650px;
       opacity: 0.3;
     }
 
-    .wrapper1{
+    .wrapper1 {
       padding: 10px;
       max-width: 1200px;
       margin: 0 auto;
       width: 100%;
     }
 
-    #card-area{
+    #card-area {
       padding: 50px 0;
     }
 
-    .box-area{
+    .box-area {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 40px;
@@ -62,7 +61,7 @@
       width: 100%;
     }
 
-    .box{
+    .box {
       border-radius: 10px;
       position: relative;
       overflow: hidden;
@@ -72,7 +71,7 @@
       margin-right: auto;
     }
 
-    .box img{
+    .box img {
       width: 100%;
       height: auto;
       border-radius: 10px;
@@ -80,7 +79,7 @@
       transition: transform 0.5s;
     }
 
-    .overlay{
+    .overlay {
       height: 0;
       width: 100%;
       background: linear-gradient(transparent, white 100%);
@@ -98,7 +97,7 @@
       transition: height .25s;
     }
 
-    .overlay h3{
+    .overlay h3 {
       font-weight: 500;
       margin-bottom: 5px;
       margin-top: 25px;
@@ -107,7 +106,7 @@
       letter-spacing: 1.6px;
     }
 
-    .overlay p{
+    .overlay p {
       margin-top: 10px;
       color: black;
       text-decoration: none;
@@ -118,18 +117,15 @@
       word-spacing: 1.6px;
     }
 
-    .boxLhover img{
+    .boxLhover img {
       transform: scale(1.2);
     }
 
-    .box:hover .overlay{
+    .box:hover .overlay {
       height: 100%;
     }
 
-    /*Spiderman - Fixed positioning to be responsive*/
-    
-
-    /*Projects*/
+    /* Projects */
     .wrapper {
       margin-top: 1rem;
       width: 100%;
@@ -202,84 +198,62 @@
       transition: all 0.3s ease;
     }
 
-    .item1 {
-      animation-delay: calc(30s / 8 * (8 - 1) * -1);
-    }
+    .item1 { animation-delay: calc(30s / 8 * (8 - 1) * -1); }
+    .item2 { animation-delay: calc(30s / 8 * (8 - 2) * -1); }
+    .item3 { animation-delay: calc(30s / 8 * (8 - 3) * -1); }
+    .item4 { animation-delay: calc(30s / 8 * (8 - 4) * -1); }
+    .item5 { animation-delay: calc(30s / 8 * (8 - 5) * -1); }
+    .item6 { animation-delay: calc(30s / 8 * (8 - 6) * -1); }
+    .item7 { animation-delay: calc(30s / 8 * (8 - 7) * -1); }
+    .item8 { animation-delay: calc(30s / 8 * (8 - 8) * -1); }
 
-    .item2 {
-      animation-delay: calc(30s / 8 * (8 - 2) * -1);
-    }
-
-    .item3 {
-      animation-delay: calc(30s / 8 * (8 - 3) * -1);
-    }
-
-    .item4 {
-      animation-delay: calc(30s / 8 * (8 - 4) * -1);
-    }
-
-    .item5 {
-      animation-delay: calc(30s / 8 * (8 - 5) * -1);
-    }
-
-    .item6 {
-      animation-delay: calc(30s / 8 * (8 - 6) * -1);
-    }
-
-    .item7 {
-      animation-delay: calc(30s / 8 * (8 - 7) * -1);
-    }
-
-    .item8 {
-      animation-delay: calc(30s / 8 * (8 - 8) * -1);
-    }
-
-    .skills{
+    .skills {
       color: white;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-style: italic;
-      font-size: 21px; /* Reduced for mobile */
+      font-size: 21px;
       text-align: center;
       margin-top: 25px;
       text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
     }
 
-    /* Projects */
-    
-    .but{
-    width: 80px;
-    height: 25px;
-    background-color: blue;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    font-style: italic;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    font-size: 18px;
+    .but {
+      width: 80px;
+      height: 25px;
+      background-color: blue;
+      text-align: center;
+      border-radius: 10px;
+      color: white;
+      font-style: italic;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      font-size: 18px;
+      position: static;
+      margin-top: 10px;
     }
 
-    .ol{
+    .ol {
       text-align: center;
       font-size: 18px;
       height: 210px;
     }
 
-    .ol p{
-      margin-top:10px;
-      color:white;
+    .ol p {
+      margin-top: 10px;
+      color: white;
       text-decoration: none;
       font-size: 18px;
-      text-align:left;
+      text-align: left;
       margin-left: 15px;
       margin-right: 15px;
       margin-bottom: 45px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding-bottom: 50px;
     }
 
-    .ol h5{
+    .ol h5 {
       margin-bottom: 5px;
       margin-top: 8px;
       font-family: bebas neue, sans-serif;
@@ -287,7 +261,7 @@
       letter-spacing: 1.6px;
     }
 
-    .box1{
+    .box1 {
       border-radius: 10px;
       position: relative;
       overflow: hidden;
@@ -299,7 +273,7 @@
       margin-right: auto;
     }
 
-    .box1 img{
+    .box1 img {
       width: 100%;
       height: auto;
       border-radius: 10px;
@@ -307,7 +281,7 @@
       transition: transform 0.5s;
     }
 
-    .box1:hover{
+    .box1:hover {
       animation-play-state: paused;
       color: white;
       background-color: rgb(44, 61, 76);
@@ -315,10 +289,7 @@
       z-index: 1.25;
     }
 
-    
-    
-
-    .foot{
+    .foot {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -330,7 +301,7 @@
       flex-wrap: wrap;
     }
 
-    .foot p{
+    .foot p {
       text-align: center;
       margin: 10px auto;
     }
@@ -349,7 +320,6 @@
       perspective: 1000px;
       font-family: sans-serif;
       margin: 20px;
-      
     }
 
     .title {
@@ -390,7 +360,6 @@
     .flip-card-front {
       background: #fff;
       color: #000;
-      
     }
 
     .flip-card-back {
@@ -398,12 +367,12 @@
       color: #fff;
       transform: rotateY(180deg);
     }
-    
+
     /* Responsive styles */
     .hero-content {
       padding: 0 15px;
     }
-    
+
     .flip-card-container {
       display: flex;
       flex-wrap: wrap;
@@ -412,440 +381,367 @@
       margin: 80px auto;
       max-width: 1200px;
     }
-    
-    /* Button position fix */
-    .but {
-      position: static;
-      margin-top: 10px;
-    }
-    
-    .ol p {
-      padding-bottom: 50px;
-    }
 
     /* Media queries for responsiveness */
     @media (max-width: 991px) {
-      .skills {
-        font-size: 18px;
-      }
-      
-      .hero-section {
-        height: auto !important;
-        padding: 60px 0;
-      }
-      
-      h1.display-5 {
-        font-size: 2rem;
-      }
-      
-      .lead {
-        font-size: 1rem;
-      }
-      .notification{
-        height: 200px;
-      }
+      .skills { font-size: 18px; }
+      .hero-section { height: auto !important; padding: 60px 0; }
+      h1.display-5 { font-size: 2rem; }
+      .lead { font-size: 1rem; }
+      .notification { height: 200px; }
     }
-    
+
     @media (max-width: 767px) {
-      .box-area {
-        grid-gap: 20px;
-      }
-      
-      .overlay h3 {
-        font-size: 27px;
-      }
-      
-      .overlay p {
-        font-size: 20px;
-      }
-      
-      .skills {
-        font-size: 20px;
-      }
-      
-      .container .box:hover {
-        flex: 3 1;
-      }
-      
-      .container .view:hover {
-        font-size: 14px;
-      }
-      .notification{
-        height: 200px;
-      }
+      .box-area { grid-gap: 20px; }
+      .overlay h3 { font-size: 27px; }
+      .overlay p { font-size: 20px; }
+      .skills { font-size: 20px; }
+      .container .box:hover { flex: 3 1; }
+      .container .view:hover { font-size: 14px; }
+      .notification { height: 200px; }
     }
-    
+
     @media (max-width: 575px) {
-      .box-area {
-        grid-template-columns: 1fr;
-      }
-      
-      .container {
-        height: auto;
-      }
-      
-      .foot {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .foot img {
-        margin: 10px auto;
-      }
-      
-      .btn-lg {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-      }
-
-      .notification{
-        height: 200px;
-      }
+      .box-area { grid-template-columns: 1fr; }
+      .container { height: auto; }
+      .foot { flex-direction: column; text-align: center; }
+      .foot img { margin: 10px auto; }
+      .btn-lg { padding: 0.5rem 1rem; font-size: 1rem; }
+      .notification { height: 200px; }
     }
-
-
-
-
-
-
-
-
-
-
 
     /* Connect section */
-ul {
-  list-style: none;
-}
+    ul { list-style: none; }
 
-.example-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.example-2 .icon-content {
-  margin: 0 10px;
-  position: relative;
-}
-.example-2 .icon-content .tooltip {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.example-2 .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -50px;
-}
-.example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: #4d4d4d;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover {
-  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-}
-.example-2 .icon-content a svg {
-  position: relative;
-  z-index: 1;
-  width: 30px;
-  height: 30px;
-}
-.example-2 .icon-content a:hover {
-  color: white;
-}
-.example-2 .icon-content a .filled {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover .filled {
-  height: 100%;
-}
+    .example-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-  background-color: #0274b3;
-}
+    .example-2 .icon-content {
+      margin: 0 10px;
+      position: relative;
+    }
 
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
-  background-color: #24262a;
-}
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
-}
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  background-color: #ff0000;
-}
+    .example-2 .icon-content .tooltip {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      opacity: 0;
+      visibility: hidden;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
 
+    .example-2 .icon-content:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+      top: -50px;
+    }
 
-/* From Uiverse.io by SouravBandyopadhyay */ 
-        .container {
-            padding: 5% 3%;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        .notification {
-            display: flex;
-            flex-direction: column;
-            isolation: isolate;
-            position: relative;
-            width: 34rem;
-            height: 18rem;
-            background: #29292c;
-            border-radius: 1rem;
-            overflow: hidden;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 16px;
-            --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
-            --color: #32a6ff;
-        }
+    .example-2 .icon-content a {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: #4d4d4d;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
 
-        .notification:before {
-            position: absolute;
-            content: "";
-            inset: 0.0625rem;
-            border-radius: 0.9375rem;
-            background: #18181b;
-            z-index: 2;
-        }
+    .example-2 .icon-content a:hover {
+      box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+    }
 
-        .notification:after {
-            position: absolute;
-            content: "";
-            width: 0.25rem;
-            inset: 0.65rem auto 0.65rem 0.5rem;
-            border-radius: 0.125rem;
-            background: var(--gradient);
-            transition: transform 300ms ease;
-            z-index: 4;
-        }
+    .example-2 .icon-content a svg {
+      position: relative;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+    }
 
-        .notititle {
-            color: white;
-            padding: 0.65rem 0.25rem 0.4rem 1.25rem;
-            font-weight: 500;
-            font-size: 1.1rem;
-            transition: transform 300ms ease;
-            z-index: 5;
-        }
+    .example-2 .icon-content a:hover {
+      color: white;
+    }
 
-        .notification:hover .notititle {
-            transform: translateX(0.15rem);
-        }
+    .example-2 .icon-content a .filled {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: #000;
+      transition: all 0.3s ease-in-out;
+    }
 
-        .notibody {
-            color: #99999d;
-            padding: 0 1.25rem;
-            transition: transform 300ms ease;
-            z-index: 5;
-            line-height: 1.4;
-            margin-bottom: 0.5rem;
-        }
+    .example-2 .icon-content a:hover .filled {
+      height: 100%;
+    }
 
-        .notification:hover .notibody {
-            transform: translateX(0.25rem);
-        }
+    .example-2 .icon-content a[data-social="linkedin"] .filled,
+    .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+      background-color: #0274b3;
+    }
 
-        .notiglow,
-        .notiborderglow {
-            position: absolute;
-            width: 20rem;
-            height: 20rem;
-            transform: translate(-50%, -50%);
-            background: radial-gradient(circle closest-side at center, white, transparent);
-            opacity: 0;
-            transition: opacity 300ms ease;
-        }
+    .example-2 .icon-content a[data-social="github"] .filled,
+    .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+      background-color: #24262a;
+    }
 
-        .notiglow {
-            z-index: 3;
-        }
+    .example-2 .icon-content a[data-social="instagram"] .filled,
+    .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+      background: linear-gradient(
+        45deg,
+        #405de6,
+        #5b51db,
+        #b33ab4,
+        #c135b4,
+        #e1306c,
+        #fd1f1f
+      );
+    }
 
-        .notiborderglow {
-            z-index: 1;
-        }
+    .example-2 .icon-content a[data-social="youtube"] .filled,
+    .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+      background-color: #ff0000;
+    }
 
-        .notification:hover .notiglow {
-            opacity: 0.1;
-        }
+    /* From Uiverse.io by SouravBandyopadhyay */
+    .container {
+      padding: 5% 3%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        .notification:hover .notiborderglow {
-            opacity: 0.1;
-        }
-        
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                padding: 3% 4%;
-            }
-            
-            .notification {
-                width: 90vw;
-                max-width: 500px;
-                height: auto;
-                min-height: 16rem;
-            }
-            
-            .notititle {
-                font-size: 1rem;
-                padding: 0.65rem 0.25rem 0.4rem 1rem;
-            }
-            
-            .notibody {
-                font-size: 0.9rem;
-                padding: 0 1rem;
-                line-height: 1.3;
-            }
-            
-            .notification:after {
-                inset: 0.65rem auto 0.65rem 0.4rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 2% 3%;
-            }
-            
-            .notification {
-                width: 95vw;
-                max-width: 400px;
-                height: auto;
-                min-height: 14rem;
-            }
-            
-            .notititle {
-                font-size: 0.95rem;
-                padding: 0.6rem 0.2rem 0.3rem 0.9rem;
-            }
-            
-            .notibody {
-                font-size: 0.85rem;
-                padding: 0 0.9rem;
-                line-height: 1.25;
-                margin-bottom: 0.4rem;
-            }
-            
-            .notification:after {
-                width: 0.2rem;
-                inset: 0.6rem auto 0.6rem 0.3rem;
-            }
-        }
-        
-        /* Extra small screens */
-        @media (max-width: 320px) {
-            .container {
-                padding: 2%;
-            }
-            
-            .notification {
-                width: 98vw;
-                max-width: 300px;
-                min-height: 12rem;
-            }
-            
-            .notititle {
-                font-size: 0.9rem;
-                padding: 0.5rem 0.2rem 0.3rem 0.8rem;
-            }
-            
-            .notibody {
-                font-size: 0.8rem;
-                padding: 0 0.8rem;
-                line-height: 1.2;
-            }
-            
-            .notification:after {
-                inset: 0.5rem auto 0.5rem 0.25rem;
-            }
-            
-            .notiglow,
-            .notiborderglow {
-                width: 15rem;
-                height: 15rem;
-            }
-        }
+    .notification {
+      display: flex;
+      flex-direction: column;
+      isolation: isolate;
+      position: relative;
+      width: 34rem;
+      height: 18rem;
+      background: #29292c;
+      border-radius: 1rem;
+      overflow: hidden;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16px;
+      --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+      --color: #32a6ff;
+    }
+
+    .notification:before {
+      position: absolute;
+      content: "";
+      inset: 0.0625rem;
+      border-radius: 0.9375rem;
+      background: #18181b;
+      z-index: 2;
+    }
+
+    .notification:after {
+      position: absolute;
+      content: "";
+      width: 0.25rem;
+      inset: 0.65rem auto 0.65rem 0.5rem;
+      border-radius: 0.125rem;
+      background: var(--gradient);
+      transition: transform 300ms ease;
+      z-index: 4;
+    }
+
+    .notititle {
+      color: white;
+      padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+    }
+
+    .notification:hover .notititle {
+      transform: translateX(0.15rem);
+    }
+
+    .notibody {
+      color: #99999d;
+      padding: 0 1.25rem;
+      transition: transform 300ms ease;
+      z-index: 5;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .notification:hover .notibody {
+      transform: translateX(0.25rem);
+    }
+
+    .notiglow,
+    .notiborderglow {
+      position: absolute;
+      width: 20rem;
+      height: 20rem;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle closest-side at center, white, transparent);
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    .notiglow {
+      z-index: 3;
+    }
+
+    .notiborderglow {
+      z-index: 1;
+    }
+
+    .notification:hover .notiglow {
+      opacity: 0.1;
+    }
+
+    .notification:hover .notiborderglow {
+      opacity: 0.1;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 3% 4%;
+      }
+
+      .notification {
+        width: 90vw;
+        max-width: 500px;
+        height: auto;
+        min-height: 16rem;
+      }
+
+      .notititle {
+        font-size: 1rem;
+        padding: 0.65rem 0.25rem 0.4rem 1rem;
+      }
+    }
+
+  </style>
+
+</html>
 
   </style>
 
   <body>
 
-    <!-- Hero Section -->
-    <div class="hero-section d-flex align-items-center justify-content-center text-center" style="
-      background-image: url('./bg.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      height: 745px;
-      color: white;
-    ">
-      <!-- Overlay for readability -->
-      <div style="
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.40);
-        z-index: 1;
-      "></div>
+    <div style="
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  aspect-ratio: 16/9;
+  height: auto;
+  min-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+">
+  <!-- Responsive Video Background -->
+  <video loop playsinline autoplay style="
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 0;
+    border-radius:-5px;
+    
+  " preload="auto">
+    <source src="Video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-      <!-- Hero Content -->
-      <div style="position: relative; z-index: 2; width: 100%;">
-        <h1 class="display-5 fw-bold">Passionate about Code.<br>Driven by Creativity.</h1>
-        <h1 class="display-5 fw-bold">Hi! I am <span style="background-color: #0c997f; border-radius: 10px; padding: 0px 10px 0px 10px; font-style: italic;">Aayush Kumar Gupta</span></h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Aspiring Software Engineer based in India, with a passion for building innovative solutions and a knack for problem-solving.</p>
-          <div class="d-grid gap-5 d-sm-flex justify-content-sm-center">
-            <div style="gap: 5px;">
-          <a href="./Aayush Kumar Gupta.pdf" download="Aayush-Kumar-Gupta.pdf" class="btn btn-primary btn-lg px-4 gap-5" role="button">Resume Download</a>
-<a href="./Aayush Kumar Gupta.pdf" target="_blank" style="background-color: white; border-color: rgb(242, 242, 242); color: black;" class="btn btn-outline-secondary btn-lg px-4" role="button">View Resume</a>
+  <!-- Overlay for readability -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.20);
+    z-index: 1;
+  "></div>
 
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Hero Content (Text and Buttons) -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+  ">
+    <h1 style="font-size: clamp(1.5rem, 6vw, 2.5rem); font-weight: bold; margin-bottom: 1rem;">
+      Passionate about Code.<br>Driven by Creativity.
+    </h1>
+    <h1 style="font-size: clamp(1.5rem, 6vw, 2.5rem); font-weight: bold; margin-bottom: 1rem;">
+      Hi! I am
+      <span style="
+        background-color: #0c997f;
+        border-radius: 10px;
+        padding: 0 1rem;
+        font-style: italic;
+      ">Aayush K. Gupta</span>
+    </h1>
+    <p style="font-size: clamp(0.9rem, 3.5vw, 1.2rem); margin: 1rem 0 2rem 0;">
+      Aspiring Software Engineer based in India, with a passion for building innovative solutions and a knack for problem-solving.
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="./Aayush Kumar Gupta.pdf" download="Aayush-Kumar-Gupta.pdf" style="
+        background-color: #0d6efd;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+        font-weight: bold;
+      ">Resume Download</a>
+      <a href="./Aayush Kumar Gupta.pdf" target="_blank" style="
+        background-color: white;
+        color: black;
+        border: 1px solid #f2f2f2;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+        font-weight: bold;
+      ">View Resume</a>
     </div>
+  </div>
+</div>
+
+
+
+    
+
+
+
+
 
 
     <div class="BackGround">
-
-
-
     <div class="card-area">
       <h2 style="text-align: center; padding-top: 60px ; font-style:oblique;">A Little About Me </h2>
       <div style="width: 70%; height: 2px; background-color: rgba(245, 238, 221, 0.2); margin-left: auto; margin-right: auto;"></div>
@@ -904,7 +800,7 @@ ul {
       <div class="itemLeft item2"><div class="skills">C / C++</div></div>
       <div class="itemLeft item3"><div class="skills">Java</div></div>
       <div class="itemLeft item4"><div class="skills">SQL</div></div>
-      <div class="itemLeft item5"><div class="skills">Excel</div></div>
+      <div class="itemLeft item5"><div class="skills">React.js</div></div>
       <div class="itemLeft item6"><div class="skills">Power Bi</div></div>
       <div class="itemLeft item7"><div class="skills">Java Script</div></div>
       <div class="itemLeft item8"><div class="skills">HTML5 CSS3</div></div>
@@ -913,10 +809,10 @@ ul {
       <div class="itemRight item1"><div class="skills" style="margin-top: 13px;">Supervised learning</div></div>
       <div class="itemRight item2"><div class="skills">NLP</div></div>
       <div class="itemRight item3"><div class="skills">Gen - AI</div></div>
-      <div class="itemRight item4"><div class="skills">Shell Script</div></div>
+      <div class="itemRight item4"><div class="skills">PostgreSQL</div></div>
       <div class="itemRight item5"><div class="skills">Bootstrap</div></div>
       <div class="itemRight item6"><div class="skills">Git / GitHub</div></div>
-      <div class="itemRight item7"><div class="skills">Web Design</div></div>
+      <div class="itemRight item7"><div class="skills">System Design</div></div>
       <div class="itemRight item8"><div class="skills">LLMs</div></div>
     </div>
 
@@ -1019,33 +915,71 @@ ul {
     </div>
 
 
+
+
+
       
-<div class=" j " style="width: 100%;
-      max-width: 475px;
-      height: 575px;
-      margin-left: auto;
-      margin-right: auto;
-  --color: rgb(255, 253, 246,0.2);
-  background-color: black;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-  background-size: 55px 55px; border-radius: 70px;" >
-      <div class="flip-card" style="margin-left: auto;margin-right:auto; margin-top: 80px; padding-top: 20px;">
-        <div class="flip-card-inner" style="height: 520px;">
-          <div class="flip-card-front">
-    <img src="./Untitleddesign-ezgif.com-crop.gif" alt="GIF" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px ;">
-</div>
-          <div class="flip-card-back" style="background-color:goldenrod;">
-            <p class="title" style="font-size: 25px;">My Personal Interest</p>
-            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Finance <br>learning Psychology <br> Riding My GT650 <br>Traveling <br> Listning to Loud Music <br></p>
-          </div>
-        </div>
+<div style="
+  width: 111%;
+  margin-left:-20px;
+  height: 970px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-right: auto;
+">
+  <!-- Video Background -->
+  <video autoplay loop muted playsinline style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  ">
+    <source src="video7.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Fade Effect at Top and Bottom -->
+  <div style="
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.05) 15%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,0.7) 100%),
+      linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.05) 15%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+  "></div>
+
+  <!-- Card -->
+  <div class="flip-card" style="
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+  ">
+    <div class="flip-card-inner" style="height: 520px;">
+      <div class="flip-card-front">
+        <img src="./Untitleddesign-ezgif.com-crop.gif" alt="GIF" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
       </div>
+      <div class="flip-card-back" style="background-color: goldenrod;">
+        <p class="title" style="font-size: 25px;">My Personal Interest</p>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; font-size: 20px;">
+          Finance <br>Learning Psychology <br> Riding My GT650 <br>Traveling <br>Listening to Loud Music
+        </p>
+      </div>
+    </div>
+  </div>
 
-</div>
 
-
-    <h2 style="text-align: center; padding-top: 60px; font-style:oblique; margin-bottom: 60px; font-size: 40px;"> Connect With Me <br> Lets Build Together</h2>
+<h2 style="text-align: center; padding-top: 125px; font-style:oblique; margin-bottom: 45px; font-size: 40px;z-index: 2;"> Connect With Me <br> Lets Build Together</h2>
 
     <ul class="example-2">
   <li class="icon-content">
@@ -1137,16 +1071,19 @@ ul {
     <div class="tooltip">Email</div>
   </li>
 </ul>
+
+
     
 
-</div>    
-  <div style="width: 80%; height: 2px; background-color: rgba(245, 238, 221, 0.2); margin-left: auto; margin-right: auto;"></div>
-  <div style="display: flex;">
-    <footer class="foot">
-        Made with Love ❤️ by Aayush Kumar Gupta<br>
-        © 2025 Aayush Kumar Gupta. All rights reserved.
-      </p>
-    </footer>
-  </div>
+  
+    <div style="width: 95%; height: 4px; background-color: rgba(255, 255, 255, 0.6); margin-left: auto; margin-right: auto; z-index: 2;"></div>
+      <div style="display: flex; z-index: 2;">
+          <footer class="foot" style=" font-weight:500; font-size: 15px; margin-bottom: auto; color:rgba(255, 255, 255) ;">
+              Made with Love ❤️ by Aayush Kumar Gupta<br>
+              © 2025 Aayush Kumar Gupta. All rights reserved.
+            </p>
+          </footer>
+      </div>
+    </div>
   </body>
 </html>
